@@ -1,5 +1,6 @@
 # About
-This repository contains a few examples on how to use a searcher.
+Fork from github.com/jito-labs/searcher-examples
+For fix the build failed
 
 ## Setup
 1. Install protoc to compile protobufs
