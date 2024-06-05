@@ -1,8 +1,11 @@
 use tonic_build::configure;
 
 fn main() {
+    let mut config = prost_build::Config::new();
+    config.protoc_arg("--experimental_allow_proto3_optional");
     configure()
-        .compile(
+        .compile_with_config(
+            config,
             &[
                 "protos/auth.proto",
                 "protos/block.proto",
