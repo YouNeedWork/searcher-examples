@@ -15,4 +15,3 @@ tonic = "0.10"
 
 [build-dependencies]
 tonic-build = "0.10"
-prost-build = "0.12.6"

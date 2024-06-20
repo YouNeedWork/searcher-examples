@@ -2433,7 +2433,6 @@ dependencies = [
  "bincode",
  "bytes 1.5.0",
  "prost",
- "prost-build",
  "prost-types",
  "solana-perf",
  "solana-sdk 0.14.0",
