@@ -110,8 +110,9 @@ where
     let bundle_signatures: Vec<Signature> =
         transactions.iter().map(|tx| tx.signatures[0]).collect();
 
-    let result = send_bundle_no_wait(transactions, searcher_client).await?;
+    let _ = send_bundle_no_wait(transactions, searcher_client).await?;
 
+    /*
     // grab uuid from block engine + wait for results
     let uuid = result.into_inner().uuid;
     info!("Bundle sent. UUID: {:?}", uuid);
@@ -190,6 +191,7 @@ where
     for sig in bundle_signatures.iter() {
         info!("https://solscan.io/tx/{}", sig);
     }
+    */
     Ok(())
 }
 
